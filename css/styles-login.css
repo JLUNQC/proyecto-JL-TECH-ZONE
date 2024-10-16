@@ -1,0 +1,134 @@
+:root{
+    --blue--:#0052b1;
+    --yellow--:#FFC21F;
+    --border--:rgba(206, 202, 202, 0.329);
+    --green--: #73AD1B;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--border--);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.sesion{
+    overflow: hidden;
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.datos-sesion{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.datos-sesion h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.datos-sesion h3{
+    font-size: 15px;
+    color: red;
+    transition: 1s;
+}
+.datos-sesion input{
+    padding: 10px;
+    margin: 10px 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--border--);
+    transition: 0.5s;
+}.datos-sesion input:hover{
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.datos-sesion button{
+    margin: 40px 100px;
+    padding: 10px 0px;
+    border: 1px solid var(--border--);
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.6s;
+    font-size: 19px;
+}
+.datos-sesion button:hover{
+    background-color: var(--blue--);
+    color: black;
+    cursor: pointer;
+    color: white;
+    transition: 0.6s;
+}
+.banner{
+    width: 500px;
+    background-image: url(../assets/banners/banner.webp);
+    background-position: center center;
+    background-size: cover;
+}
+/*----------------------------------*/
+@media (max-width:1100px) {
+    .sesion{
+
+        width: 800px;
+        height: 500px;
+        transition: 0.5s;
+    }
+    .datos-sesion button{
+        font-size: 10px;
+    }
+    .datos-sesion h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:850px) {
+    .sesion{
+
+        width: 600px;
+        height: 300px;
+    }
+    .datos-sesion button{
+        font-size: 10px;
+    }
+    .datos-sesion h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:650px) {
+    .sesion{
+
+        width: 300px;
+        height: 500px;
+    }
+    .banner{
+        height: 250px;
+        width: 300px;
+    }
+    .datos-sesion{
+        height: 250px;
+        width: 300px;
+    }
+    .sesion{
+        flex-direction: column;
+    }
+    .datos-sesion button {
+        margin: 9px 80px;
+    }
+    .datos-sesion h3{
+        font-size: 12px;
+    }
+}

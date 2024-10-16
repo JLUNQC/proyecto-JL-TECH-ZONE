@@ -1,0 +1,280 @@
+/*primer banner*/
+.primer-banner{
+    background-color: rgba(207, 207, 207, 0.226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-banner1 p{
+    font-size: 21px;
+    padding-bottom: 30px;
+}
+.info-banner1 h2{
+    font-size: 30px;
+    width: 420px;
+}
+.info-banner1 button{
+    margin-top: 50px;
+}
+.img-banner1 img{
+    margin-top: 50px;
+}
+/*Fin primer banner*/
+
+/*Categorias*/
+.texto-center{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0px 40px 0px;
+}
+.compra-categoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.categorias img{
+    width: 150px;
+    padding: 20px;
+    border: 1px solid var(--border--);
+    border-radius: 10px;
+}
+.categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.categorias h3{
+    padding-top: 15px;
+    font-size: 17px;
+}
+/*Fin Categorias*/
+
+/*Banner-2*/
+.segundo-banner{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sec-banner{
+    height: 250px;
+    width: 685px;
+    background-color: var(--blue--);
+    margin: 40px 10px;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec-banner-2{
+    background-color: var(--green--);
+}
+.img-sec-banner img{
+    width: 250px;
+}
+
+.info-sec p{
+    padding: 6px 0px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.info-sec h2{
+    font-size: 40px;
+}
+.info-sec .p2{
+    font-size: 15px;
+    padding-top: 30px;
+}
+/*Fin Banner*/
+
+/*Productos*/
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.producto{
+    text-align: center;
+    width: 260px;
+    border: 1px solid var(--border--);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.producto figure img{
+    padding: 20px 0px 30px 0px;
+    width: 150px;
+}
+.info-producto{
+    padding: 0px 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.titulo-producto{
+    height: 70px;
+}
+.titulo-producto h2{
+    font-size: 15px;
+}
+.info-producto a{
+    color: var(--blue--);
+    text-decoration: none;
+}
+.precio-producto{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-producto p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.agregar{
+    padding: 3px 7px;
+    border: none;
+    background-color: var(--blue--);
+    border-radius: 8px;
+    color: white;
+    transition: 0.5s;
+}
+.agregar:hover{
+    background-color: var(--yellow--);
+    color: black;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.agregar-2{
+    padding: 3px 8px;
+    border: none;
+    background-color: var(--border--);
+    border-radius: 8px;
+    color: black;
+    transition: 0.5s;
+}
+.agregar-2:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 0.6s;
+}
+
+/*Fin de productos*/
+
+/*Banner 3*/
+.tercer-banner{
+    text-align: center;
+}
+.tercer-banner img{
+    border-radius: 10px;
+}
+/*Fin banner 3*/
+
+/*Beneficios*/
+.beneficios-venta{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+}
+.beneficio img{
+    width: 60px;
+    margin: 10px 0px;
+}
+.beneficio{
+    width: 348px;
+    text-align: center;
+    border: 1px solid var(--border--);
+    line-height: 1.7;
+}
+.beneficio p{
+    padding-bottom: 20px;
+}
+.beneficio-1{
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px
+}
+.beneficio-4{
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+/*Fin Beneficios*/
+
+/*Blogs*/
+.blog img{
+    width: 100%;
+}
+.nuestro-blog{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+.blog{
+    width: 450px;
+    line-height: 2;
+    color: var(--blue--);
+}
+.blog h3{
+    line-height: 1.5;
+    color: black;
+    font-weight: 500;
+}
+/* Fin Blogs*/
+
+/*----------------------------------*/
+
+@media (max-width: 1400px) {
+    .tercer-banner img{
+        width: 100%;
+    }
+    .beneficios-venta{
+        margin: 60px 5px;
+        line-height: 1;
+    }
+    .beneficio p{
+        padding-bottom: 0px;
+        font-size: 12px;
+    }
+    .beneficio h3{
+        font-size: 12px;
+    }
+    .beneficio{
+        height: 150px;
+    }
+    .nuestro-blog{
+        margin: 60px 5px;
+    }
+}
+@media (max-width: 1200px) {
+    .tercer-banner img{
+        width: 99%;
+    }
+    .segundo-banner{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .sec-banner {
+        width: 90%;
+    }
+    .img-banner1 img{
+        width: 90%;
+    }
+    .compra-categoria{
+        gap: 10px;
+    }
+    .categorias img, .producto figure img{
+        width: 100PX;
+    }
+    .producto{
+        width: 170px;
+    }
+    .info-banner1{
+        margin-left: 20px;
+    }
+    .info-banner1 h2{
+        font-size: 17px;
+
+    }
+}

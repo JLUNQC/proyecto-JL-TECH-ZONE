@@ -1,0 +1,7 @@
+.datos-sesion{
+    order: 2;
+}
+.banner{
+    order: 1;
+    background-image: url(../assets/banners/register.webp)
+}

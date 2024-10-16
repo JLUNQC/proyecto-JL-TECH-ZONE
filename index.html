@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JL Tech Zone</title>
+    <link rel="icon" href="./assets/svg/logo-alone.svg">
+    <link rel="stylesheet" href="./css/styles-header-footer.css">
+    <link rel="stylesheet" href="./css/styles-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="logo-header">
+            <a href="./index.html"><img src="./assets/svg/Logo.svg" alt="logo" width="300px"></a>
+            <div class="compras">
+                <div class="iconos-compra">
+                    <div class="iconos-compra-solo">
+                        <span id="addCompra">
+                            <p>0</p>
+                        </span>
+                        <a href="#"><img src="./assets/svg/carro-de-compras.svg" alt="carrito" width="30px"></a>
+                    </div>
+                </div>
+                <div class="info-compras">
+                    <h2>Total</h2>
+                    <h3 id="TotalCompra"></h3>
+                </div>
+                <a href="./html/login.html"><img src="./assets/svg/usuario.svg" alt="usuario" width="30px"></a>
+                <p id="nombreUsuario"></p>
+                <button onclick="salir()" type="button" class="sesion-salir" id="salirUsu">Salir</button>
+            </div>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./html/nosotros.html">Nosotros</a></li>
+            </ul>
+        </section>
+    </header>
+    <section class="primer-banner">
+        <div class="info-banner1">
+            <p>Coleccion de Computadores</p>
+            <h2>OFERTAS ESPECIALES EN LOS DISPOSITIVOS MÁS GENIALES.</h2>
+            <a href="#"><button class="botones">Comprar</button></a>
+        </div>
+        <div class="img-banner1">
+            <img src="./assets/banners/mac.webp" alt="Mac" width="700px">
+        </div>
+    </section>
+    <h2 class="texto-center">Compra por Categoría</h2>
+    <section class="compra-categoria">
+        <div class="categorias">
+            <img src="./assets/productos/Celular.webp" alt="Celular">
+            <h3>Celulares</h3>
+        </div>
+        <div class="categorias">
+            <img src="./assets/productos/Computador.webp" alt="Computador">
+            <h3>Computadores</h3>
+        </div>
+        <div class="categorias">
+            <img src="./assets/productos/Auriculares.webp" alt="Auriculares">
+            <h3>Auriculares</h3>
+        </div>
+        <div class="categorias">
+            <img src="./assets/productos/Camara.webp" alt="Camara">
+            <h3>Camaras</h3>
+        </div>
+        <div class="categorias">
+            <img src="./assets/productos/Reloj.webp" alt="Reloj">
+            <h3>Relojes</h3>
+        </div>
+    </section>
+    <section class="segundo-banner">
+        <div class="sec-banner">
+            <div class="info-sec">
+                <p>Nueva Colección</p>
+                <h2>Alienware</h2>
+                <p class="p2">A partir de $1020.00</p>
+            </div>
+            <div class="img-sec-banner">
+                <img src="./assets/banners/banner-sec-1.webp" alt="Alienware">
+            </div>
+        </div>
+        <div class="sec-banner sec-banner-2">
+            <div class="info-sec">
+                <p>Mando Inalámbrico</p>
+                <h2>Control Xbox</h2>
+                <p class="p2">A partir de $105.00</p>
+            </div>
+            <div class="img-sec-banner">
+                <img src="./assets/banners/banner-sec-2.webp" alt="Mando">
+            </div>
+        </div>
+    </section>
+    <h2 class="texto-center">Productos</h2>
+    <section class="contenedor-productos">
+        <div class="row">
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/1.webp" alt="XBOX">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Xbox Seris X 1TB</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto">650</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra()">-</button>
+                            <button class="agregar" onclick="agregarCompra('valorProducto')">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/2.webp" alt="intel">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Procesador Intel Core i5-14400 LGA1700</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto1">250</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra1()">-</button>
+                            <button class="agregar" onclick="agregarCompra1()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/3.webp" alt="Mandops5">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Control Inalámbrico SONY PS5</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto2">100</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra2()">-</button>
+                            <button class="agregar" onclick="agregarCompra2()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/4.webp" alt="Mouseg502">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Mouse Gamer Logitech G502 Hero</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto3">130</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra3()">-</button>
+                            <button class="agregar" onclick="agregarCompra3()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/5.webp" alt="Fuente">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Fuente XPG CORE REACTOR II 650W 80 Plus Gold</a>
+                        </h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto4">500</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra4()">-</button>
+                            <button class="agregar" onclick="agregarCompra4()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/6.webp" alt="Switch">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Nintendo Switch OLED 64GB</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto5">450</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra5()">-</button>
+                            <button class="agregar" onclick="agregarCompra5()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/7.webp" alt="portatil">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Dell Alienware M16 R2 16"</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto6">700</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra6()">-</button>
+                            <button class="agregar" onclick="agregarCompra6()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/8.webp" alt="motherboards">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Board Gigabyte H610M K DDR4 Socket 1700</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto7">325</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra7()">-</button>
+                            <button class="agregar" onclick="agregarCompra7()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/9.webp" alt="motherboards">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Board MSI Z790 EDGE</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto8">299</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra8()">-</button>
+                            <button class="agregar" onclick="agregarCompra8()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="./assets/productos/10.webp" alt="motherboards">
+                </figure>
+                <div class="info-producto">
+                    <div class="titulo-producto">
+                        <h2><a href="#">Board Gigabyte Z790 AORUS ELITE AX</a></h2>
+                    </div>
+                    <div class="precio-producto">
+                        <p id="valorProducto9">315</p>
+                        <div class="botones-compra">
+                            <button class="agregar-2" onclick="quitarCompra9()">-</button>
+                            <button class="agregar" onclick="agregarCompra9()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tercer-banner">
+        <img src="./assets/banners/banner-03.webp" alt="banner-3">
+    </section>
+    <section class="beneficios-venta">
+        <div class="beneficio beneficio-1">
+            <img src="./assets/svg/entrega-rapida.svg" alt="Entrega-rapida">
+            <h3><strong>Entrega rápida y gratuita</strong></h3>
+            <p>Envío gratuito en su primer pedido</p>
+        </div>
+        <div class="beneficio beneficio-2">
+            <img src="./assets/svg/devolucion.svg" alt="Devolucion">
+            <h3><strong>Devolución de dinero sencilla</strong></h3>
+            <p>Garantía de devolución de dinero en 7 días</p>
+        </div>
+        <div class="beneficio beneficio-3">
+            <img src="./assets/svg/descuento.svg" alt="Descuento">
+            <h3><strong>Obtenga descuento para miembros</strong></h3>
+            <p>En cada pedido de más de $130.00</p>
+        </div>
+        <div class="beneficio beneficio-4">
+            <img src="./assets/svg/soporte.svg" alt="Soporte">
+            <h3><strong>El mejor soporte en línea</strong></h3>
+            <p>Soporte 24/7</p>
+        </div>
+    </section>
+    <h2 class="texto-center">Nuestro Blog</h2>
+    <section class="nuestro-blog">
+        <div class="blog">
+            <figure><img src="./assets/blog/blog-1.webp" alt="blog1"></figure>
+            <div class="info-blog">
+                <p>Agosto 4, 2024</p>
+                <h3>Cómo escribir una entrada de blog que encantará a tus lectores en 5 pasos</h3>
+            </div>
+        </div>
+        <div class="blog">
+            <figure><img src="./assets/blog/blog-2.webp" alt="blog2"></figure>
+            <div class="info-blog">
+                <p>Agosto 5, 2024</p>
+                <h3>9 tendencias e ideas de marketing de contenidos para aumentar el tráfico</h3>
+            </div>
+        </div>
+        <div class="blog">
+            <figure><img src="./assets/blog/blog-3.webp" alt="blog3"></figure>
+            <div class="info-blog">
+                <p>Agosto 6, 2024</p>
+                <h3>La guía definitiva de estrategias de marketing para mejorar las ventas</h3>
+            </div>
+        </div>
+    </section>
+    <section class="recibir-ofertas">
+        <div class="info-ofertas">
+            <h2>Recibe últimas actualizaciónes</h2>
+            <h3>|</h3>
+            <p>Suscríbete y obtenga $10 de descuento</p>
+        </div>
+        <div class="correo-ofertas">
+            <input type="email" required placeholder="Tu Correo Electronico"><button>Enviar</button>
+        </div>
+    </section>
+    <footer>
+        <section class="info-footer">
+            <div class="footers footer1">
+                <h2>Nuestra información</h2>
+                <p>Cl. 13 #24-83, Pasto, Nariño</p>
+                <a href="mailto: sebaslunq@gmail.com">
+                    <p>sebaslunq@gmail.com</p>
+                </a>
+                <a href="tel:+573187554721">
+                    <h3>+57 318-755-4721</h3>
+                </a>
+                <div class="chat">
+                    <img src="./assets/blog/chat.webp" alt="chat">
+                    <p>Chat en línea</p>
+                </div>
+            </div>
+            <div class="footers footer2">
+                <h3>Informacion</h3>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./html/nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footers footer3">
+                <h3>Politicas</h3>
+                <ul>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">condiciones de uso</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Sitema</a></li>
+                </ul>
+            </div>
+            <div class="footers footer4">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Términos y políticas</a></li>
+                    <li><a href="#">Entrega</a></li>
+                    <li><a href="#">Servicios</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="info-footer-2">
+            <div class="Redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/svg/facebook.svg"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/svg/instagram.svg"
+                        alt="instagram"></a>
+                <a href="https://x.com/home" target="_blank"><img src="./assets/svg/twitter.svg" alt="x"></a>
+            </div>
+            <div class="copyright">
+                <p>© 2024 - JL Tech Zone - Todos los derechos reservados.</p>
+            </div>
+            <div class="pagos">
+                <img src="./assets/blog/pagos.webp" alt="">
+            </div>
+        </section>
+    </footer>
+    <script src="./js/carrito.js"></script>
+</body>
+
+</html>

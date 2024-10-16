@@ -1,0 +1,104 @@
+/*banner*/
+.banner{
+    background-color: var(--border--);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 10px 0px;
+    gap: 30px;
+}
+.banner-info{
+    width: 700px;
+    font-size: 17px;
+}
+.banner-info h2{
+padding: 10px 0px;
+}
+.banner-info p{
+    text-align: justify;
+}
+.banner-imagen{
+    width: 500px;
+    height: 450px;
+    background-image: url(../assets/banners/banner-nosotros.webp);
+    background-position:left ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Fin banner*/
+/*info*/
+.informacion{
+    gap: 30px;
+    padding: 60px 0px;
+    display: flex; 
+    justify-content: center;
+}
+.info{
+    border: 1px solid var(--border--);
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 3px 3px 10px gray;
+}
+.info img{
+    width: 50px;
+    filter: invert(19%) sepia(99%) saturate(2217%) hue-rotate(201deg) brightness(92%) contrast(102%);
+    padding-top: 30px;
+}
+.info h2{
+    padding: 10px 0px;
+    font-weight: 100;
+}
+.info p{
+    font-size: 14px;
+    padding: 0px 60px 10px 60px;
+}
+/*Fin info*/
+
+/*----------------------------------*/
+@media (max-width:1300px) {
+    .banner-info{
+        width: 500px;
+    }
+    .informacion{
+        padding: 60px 30px;
+
+    }
+}
+
+@media (max-width:1050px) {
+    .banner{
+        flex-direction: column;
+    }
+    .informacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-info{
+        width: 90%;
+        text-align: center;
+    }
+    .informacion{
+        width: 90%;
+
+    }
+}
+@media (max-width:600px) {
+    .banner-info{
+        font-size: 10px;
+
+    }
+    .banner-imagen{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width:600px) {
+    .informacion{
+        padding: 40px 0px;
+        width: 100%;
+    }
+    .info{
+        width: 300px;
+    }
+}
